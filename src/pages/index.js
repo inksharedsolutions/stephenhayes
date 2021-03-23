@@ -1,28 +1,27 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Nav from "../components/nav"
+import Banner from "../components/banner"
+import UpperMain from "../components/upper-main"
+import MidMain from "../components/mid-main"
+// import LowerMain from "../components/lower-main"
+import BookSection from "../components/book-main"
+import Newsletter from "../components/newsletter"
+import Testimonial from "../components/testimonial"
+import { Helmet } from "react-helmet";
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+      <Helmet title="Home | Steve A. Hayes"/>
+      <Nav pathExt={props.path}/>
+      <Banner/>
+      <UpperMain/>
+      <BookSection/>
+      <Testimonial/>
+      <MidMain/>
+      <Newsletter/>
   </Layout>
 )
 
