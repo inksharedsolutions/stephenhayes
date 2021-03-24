@@ -19,28 +19,27 @@ const Banner = ()=>{
                         <div className="wrapper-bg-left">
                             <div className="left-col">
                                 <div className="banner-content-wrapper">
+                                    
                                     <h1>
                                         <span className="first-block">
-                                            <span>
-                                                21 Down In 
-                                            </span>
+                                            <span>Major League Baseball</span>
+                                            <span>has come to</span>
                                         </span>
-
                                         <span className="second-block">
-                                            <span id="color-o">
-                                             Vegas
-                                            </span>
+                                            <span id="color-o"> Las Vegas </span>
+                                            <span>Nevada</span>
                                         </span>
                                     </h1>
-                                    <p>
+                                    
+                                    {/* <p>
                                     In the arena of sports fandom, it's easy to lose one's passion in a sea of failed decisions. There finally comes a time when 'desperation' becomes the houses' last seat at the table.
-                                    </p>
+                                    </p> */}
 
-                                    <button>
+                                    {/* <button>
                                         <Link to="/about-the-book">
                                             Read More
                                         </Link>
-                                    </button>
+                                    </button> */}
                                
                                 </div>
                             </div>

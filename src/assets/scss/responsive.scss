@@ -24,6 +24,12 @@
             font-size: 1em;
         }
     }
+
+    .first-block{
+        span{
+            line-height: 60px;
+        }
+    }
 }
 
 
@@ -38,7 +44,7 @@
     }
 }
 
-@media screen and ( min-width : 1024px){
+@media screen and ( max-width : 1024px){
     .testimonial-blocks {
         .grid-block-wrapper{
             grid-template-columns: auto;
@@ -183,6 +189,31 @@
     .wrapper-ds{
         justify-content: center;
         align-items: center;
+    }
+
+    .first-block{
+        span{
+            line-height: 55px;
+            &:nth-child(1){
+                font-size: 9vw;
+            }
+    
+            &:nth-child(2){
+                font-size: 3vw;
+            }
+        }
+    }
+
+    .second-block{
+        span{
+            &:nth-child(2){
+                font-size: 5vw;
+            }
+        }
+    }
+    
+    #color-o{
+        font-size: 10vw;
     }
 
 }   
@@ -372,21 +403,6 @@
         }
     }
 
-    .banner-section{
-        h1{
-            &:after{
-                content: '';
-                width: 119px;
-                height: 35px;
-                position: absolute;
-                display: block;
-                transform: translate(3px, -24px);
-                background: #ffe0a6;
-                z-index: 1;
-            }
-        }
-    }
-
     .testimonial-num{
         transform: translate(-35px, -101px) !important;
     }
@@ -409,6 +425,12 @@
 
     .contactMessage{
         font-size: 1.8em !important;
+    }
+
+    .first-block{
+        span{
+            line-height: 30px;
+        }
     }
 
 }
