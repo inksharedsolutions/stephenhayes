@@ -9,7 +9,7 @@ import MidMain from "../components/mid-main"
 // import LowerMain from "../components/lower-main"
 import BookSection from "../components/book-main"
 import Newsletter from "../components/newsletter"
-import Testimonial from "../components/testimonial"
+// import Testimonial from "../components/testimonial"
 import { Helmet } from "react-helmet";
 
 const IndexPage = (props) => (
@@ -19,7 +19,7 @@ const IndexPage = (props) => (
       <Banner/>
       <UpperMain/>
       <BookSection/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <MidMain/>
       <Newsletter/>
   </Layout>

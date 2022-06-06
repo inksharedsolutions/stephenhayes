@@ -22,12 +22,12 @@ const Banner = ()=>{
                                     
                                     <h1>
                                         <span className="first-block">
-                                            <span>Major League Baseball</span>
-                                            <span>has come to</span>
+                                            <span>Ali</span>
+                                            <span>vs</span>
                                         </span>
                                         <span className="second-block">
-                                            <span id="color-o"> Las Vegas </span>
-                                            <span>Nevada</span>
+                                            <span id="color-o"> Teo</span>
+                                            <span></span>
                                         </span>
                                     </h1>
                                     
@@ -49,7 +49,7 @@ const Banner = ()=>{
                             <div className="right-col banner-img-col">
 
                                 <div className="img-banner-wrapper" ref={elemBanner}>
-                                    {/* <img src={ImgBanner}/> */}
+                                   {/*  <img src={ImgBanner}/> */}
                                 </div>
 
                             </div>
